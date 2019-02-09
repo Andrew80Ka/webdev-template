@@ -30,7 +30,7 @@ gulp.task('server', function() {
 		server: { baseDir: './build/' }
 	});
 	watch('./src/pug/**/*.*').on('change', gulp.series('pug'));
-	watch('./src/fonts/**/*.*').on('change', gulp.series('copy:build:files'));//fonts
+	// watch('./src/fonts/**/*.*').on('change', gulp.series('copy:build:files')); //fonts__??!!
 	watch('./src/less/**/*.less').on('change', gulp.series('styles'));
 	watch('./src/js/**/*.js').on('change', gulp.series('copy:js'));
 	watch('./src/libs/**/*.*').on('change', gulp.series('copy:libs-local'));
